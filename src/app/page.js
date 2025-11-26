@@ -5,6 +5,8 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import HeroView from "./components/Hero/HeroView";
 import MainView from "./components/Main/MainView";
+import CollageSuccess from './components/cards/CollageSuccessCard';
+import CollageSuccessView from './components/Collage Success/CollageSuccessView';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -193,7 +195,7 @@ export default function Home() {
                   top: centerY,
                   scale: 1,
                   ease: "power2.inOut",
-                  onUpdate: () => { }, // noop
+                  onUpdate: () => { },
                 }, 0);
 
 
@@ -305,6 +307,7 @@ export default function Home() {
           <div ref={mainSectionRef}>
             <MainView phoneContainerRef={mainPhoneContainerRef} />
           </div>
+          <CollageSuccessView />
         </section>
       </main>
     </div>
