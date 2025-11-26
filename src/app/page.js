@@ -7,6 +7,7 @@ import HeroView from "./components/Hero/HeroView";
 import MainView from "./components/Main/MainView";
 import CollageSuccess from './components/cards/CollageSuccessCard';
 import CollageSuccessView from './components/Collage Success/CollageSuccessView';
+import CollageApplicationView from "./components/Collage application/CollageApplicationView";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -308,6 +309,7 @@ export default function Home() {
             <MainView phoneContainerRef={mainPhoneContainerRef} />
           </div>
           <CollageSuccessView />
+          <CollageApplicationView />
         </section>
       </main>
     </div>
