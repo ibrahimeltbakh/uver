@@ -8,6 +8,8 @@ import MainView from "./components/Main/MainView";
 import CollageSuccess from './components/cards/CollageSuccessCard';
 import CollageSuccessView from './components/Collage Success/CollageSuccessView';
 import CollageApplicationView from "./components/Collage application/CollageApplicationView";
+import AboutUsSection from "./components/AboutUs/AboutUsView";
+import AboutUsView from "./components/AboutUs/AboutUsView";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -310,6 +312,7 @@ export default function Home() {
           </div>
           <CollageSuccessView />
           <CollageApplicationView />
+          <AboutUsView />
         </section>
       </main>
     </div>
