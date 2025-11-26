@@ -3,6 +3,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --main-color: #1951bf;
+  --secondary-color: #0c0c0c;
 }
 
 @theme inline {
@@ -20,7 +22,16 @@
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: #0f3dd6;
+  color: #ffffff;
+  font-family: "Inter", "SF Pro Display", system-ui, -apple-system, sans-serif;
+}
+
+.bg-hero {
+  background: radial-gradient(
+    circle at 20% 20%,
+    #3d6aff 0%,
+    #0b2c8a 55%,
+    #061750 100%
+  );
 }
