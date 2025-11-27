@@ -1,5 +1,5 @@
 import React from "react";
-import AnimatedText from "../AnimatedText";
+import AnimatedText from "../animations/AnimatedText";
 
 export default function HowItWorksHeader() {
   return (

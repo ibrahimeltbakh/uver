@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import AnimatedText from "../AnimatedText";
+import AnimatedText from "../animations/AnimatedText";
 
 export default function CollageSuccess({ icon, title, description }) {
   return (

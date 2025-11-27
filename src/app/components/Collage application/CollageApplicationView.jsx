@@ -4,7 +4,7 @@ import CollageApplicationCard from "../cards/CollageApplicationCard";
 import cahtImage from ".././../../../public/chat.png";
 import recommendationImage from ".././../../../public/recommendations.png";
 import graduationImage from ".././../../../public/graduationImage.png";
-import AnimatedText from "../AnimatedText";
+import AnimatedText from "../animations/AnimatedText";
 
 export default function CollageApplicationView() {
   const images = [
