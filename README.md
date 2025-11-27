@@ -1,36 +1,221 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🎓 University Landing Page
 
-## Getting Started
+This project is a fully responsive implementation of a modern university landing page UI based on the provided Dribbble design.
 
-First, run the development server:
+🔗 **Live Demo:** https://uver-teal.vercel.app/  
+📦 **GitHub Repository:** https://github.com/ibrahimeltbakh/uver
+
+---
+
+## 🚀 Tech Stack
+
+- **Next.js 16**
+- **React 19**
+- **Tailwind CSS 4**
+- **GSAP (GreenSock Animation Platform)**
+- **Lucide Icons**
+
+---
+
+## 🎨 Features
+
+### 🔹 **Pixel-Perfect UI**
+
+- Fully matches the original Dribbble concept
+- Accurate spacing, typography, and color palette
+
+### 🔹 **Fully Responsive**
+
+- Mobile-first approach
+- Optimized for tablet and desktop
+- Touch-friendly interactions
+
+### 🔹 **Reusable Components**
+
+- Cards
+- Buttons
+- Phone Mockup
+- Phone Navbar
+- Section-based architecture
+
+### 🔹 **Smooth GSAP Animations**
+
+- Staggered reveal animations
+- Slide-in from left & right
+- Scale-in transitions
+- Sticky animations
+- Scroll-triggered effects
+- Smooth transitions across all sections
+
+---
+
+## 🧩 Project Structure
+
+## 🧩 Project Structure
+
+```
+src/
+ └── app/
+      ├── components/
+      │
+      │── AboutUs/
+      │     └── AboutUsView.jsx
+      │
+      │── animations/
+      │     ├── AnimatedText.jsx
+      │     └── PhoneScrollAnimation.jsx
+      │
+      │── buttons/
+      │     └── GetEarlyAccess.jsx
+      │
+      │── cards/
+      │     ├── ApplicationCard.jsx
+      │     ├── CollageSuccessCard.jsx
+      │     ├── MessageBubble.jsx
+      │     └── UniversityCard.jsx
+      │
+      │── Collage application/
+      │     ├── CollageApplicationHeader.jsx
+      │     └── CollageApplicationView.jsx
+      │
+      │── Collage Success/
+      │     ├── CollageSuccessView.jsx
+      │     ├── Features.jsx
+      │     └── HowItWorkHeader.jsx
+      │
+      │── Hero/
+      │     ├── Countdown.jsx
+      │     ├── HeroData.jsx
+      │     ├── HeroPhoneContent.jsx
+      │     ├── HeroView.jsx
+      │     ├── Navbar.jsx
+      │     ├── Topics.jsx
+      │     └── UveerWord.jsx
+      │
+      │── Main/
+      │     ├── PhoneContent/
+      │     │     ├── ApplicationContent.jsx
+      │     │     ├── ChatContent.jsx
+      │     │     ├── RecommendationContent.jsx
+      │     │     ├── SearchContent.jsx
+      │     │     └── TrackerContent.jsx
+      │     │
+      │     ├── DisplayDetails.jsx
+      │     ├── MainSectionData.js
+      │     ├── MainView.jsx
+      │     ├── SideBar.jsx
+      │     ├── PhoneMock.jsx
+      │     └── PhoneNavbar.jsx
+      │
+      ├── globals.css
+      └── page.jsx
+```
+
+---
+
+## 🏗️ Sections Included
+
+- **Navbar**
+- **Hero Section**
+- **Main Section**
+- **About Us Section**
+- **Cards Section (Reusable)**
+- **Buttons (Reusable UI Elements)**
+- **Collage Application Section**
+- **Collage Success Section**
+- **Phone Mock Component**
+- **Phone Navbar Component**
+
+---
+
+## 🌀 Animations Used (GSAP)
+
+- **Stagger Animations** (sequential element reveal)
+- **Slide-in Animations** (from left/right)
+- **Scale-in effects**
+- **Sticky section animations**
+- **ScrollTrigger animations**
+- **Smooth transitions between sections**
+
+These animations help simulate a dynamic landing page with a premium feel.
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1️⃣ Clone the repository
+
+```bash
+git clone https://github.com/ibrahimeltbakh/uver.git
+cd uver
+```
+
+### 2️⃣ Install dependencies
+
+```bash
+npm install
+```
+
+### 3️⃣ Run development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 4️⃣ Build for production
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```bash
+npm run build
+npm start
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 📱 Responsive Breakpoints
 
-To learn more about Next.js, take a look at the following resources:
+- **Mobile:** 320px →
+- **Tablet:** 768px →
+- **Desktop:** 1024px →
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🧠 Development Approach
 
-## Deploy on Vercel
+1. Started with a **mobile-first** layout.
+2. Broke the UI into **reusable components**.
+3. Implemented sections one by one following the design.
+4. Used **Tailwind CSS utility classes** for speed and consistency.
+5. Added **GSAP animations** for smooth and modern interactions.
+6. Optimized performance & ensured clean component structure.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🧨 Challenges Faced
+
+- Matching spacing & typography exactly like the Dribbble design
+- Creating smooth animation timing using GSAP
+- Building fully reusable components for scalability
+- Ensuring perfect consistency across devices
+
+---
+
+## 📸 Demo Video (if applicable)
+
+_Add your demo video link here_
+
+---
+
+## 🧾 License
+
+This project is for educational & assessment purposes.
+
+---
+
+## ✉️ Contact
+
+If you have any questions, feel free to reach out:
+
+**Ibrahim Samir Eltbakh**  
+Frontend Developer  
+GitHub: https://github.com/ibrahimeltbakh  
+portfolio: https://ibrahim-eltbakh-portfolio.netlify.app/

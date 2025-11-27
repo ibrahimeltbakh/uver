@@ -116,6 +116,15 @@ export default function PhoneScrollAnimation({ heroContent, mainContent }) {
               tl.eventCallback("onReverseComplete", () => {
                 removeCloneAndRestore();
                 gsap.set(mainPhoneWrapper, { opacity: 0 });
+                tl.eventCallback("onReverseComplete", () => {
+                  removeCloneAndRestore();
+                  gsap.set(mainPhoneWrapper, { opacity: 0 });
+
+                  gsap.set(heroPhoneWrapper, {
+                    visibility: "visible",
+                    opacity: 1,
+                  });
+                });
               });
             },
             onUpdate: (self) => {
@@ -123,6 +132,7 @@ export default function PhoneScrollAnimation({ heroContent, mainContent }) {
             },
             onLeaveBack: () => {
               gsap.set(mainPhoneWrapper, { opacity: 0 });
+              gsap.set(heroPhoneWrapper, { visibility: "visible", opacity: 1 });
             },
           });
         };
