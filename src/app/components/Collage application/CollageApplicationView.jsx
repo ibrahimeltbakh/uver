@@ -4,6 +4,7 @@ import CollageApplicationCard from "../cards/CollageApplicationCard";
 import cahtImage from ".././../../../public/chat.png";
 import recommendationImage from ".././../../../public/recommendations.png";
 import graduationImage from ".././../../../public/graduationImage.png";
+import AnimatedText from "../AnimatedText";
 
 export default function CollageApplicationView() {
   const images = [
@@ -25,7 +26,7 @@ export default function CollageApplicationView() {
             ))}
           </div>
           <div
-            className="w-full lg:w-1/4 h-full rounded-2xl shadow-2xl overflow-hidden flex flex-col p-6 "
+            className="w-full lg:w-1/4 h-full rounded-2xl shadow-2xl overflow-hidden flex flex-col p-6 hover:shadow-2xl transition-all duration-300 hover:-translate-2"
             style={{
               backgroundImage: `url('${graduationImage.src}')`,
               backgroundSize: "cover",
@@ -38,10 +39,13 @@ export default function CollageApplicationView() {
             </div>
             <div className="hidden lg:block min-h-[500px] "></div>
             <div className=" text-white">
-              <p className=" text-xl md:text-2xl text-gray-500  leading-tight mb-8 lg:min-h-[300px] ">
+              <AnimatedText
+                as="p"
+                className=" text-xl md:text-2xl text-gray-500  leading-tight mb-8 lg:min-h-[300px]  ">
                 Get ready to experience the future of college applications with
                 UVER
-              </p>
+              </AnimatedText>
+
               <button className="flex items-center justify-center w-16 h-16 rounded-full border-2 border-white bg-transparent text-white hover:bg-white/10 transition">
                 <span className="text-2xl">→</span>
               </button>
