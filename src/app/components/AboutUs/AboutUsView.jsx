@@ -3,7 +3,7 @@ import AnimatedText from "../AnimatedText";
 
 export default function AboutUsView() {
   return (
-    <div className="relative bg-(--secondary-color) py-24 sm:py-32 lg:py-40 h-screen rounded-b-3xl overflow-hidden">
+    <section className="relative  bg-(--secondary-color) py-24 md:py-32 lg:py-40 min-h-screen rounded-b-3xl overflow-hidden">
       <video
         autoPlay
         loop
@@ -22,7 +22,7 @@ export default function AboutUsView() {
           </AnimatedText>
         </div>
 
-        <div className="w-full md:w-2/3 text-center md:text-left">
+        <div className="w-full md:w-2/3 text-center md:text-left py-5">
           <AnimatedText
             as="h2"
             className="text-xl sm:text-2xl lg:text-3xl font-normal indent-30 leading-tight mb-8">
@@ -45,6 +45,6 @@ export default function AboutUsView() {
           </button>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

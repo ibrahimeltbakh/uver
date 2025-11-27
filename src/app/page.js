@@ -280,7 +280,7 @@ export default function Home() {
 
   return (
     <div className="relative min-h-screen overflow-hidden bg-(--main-color) text-white">
-      <div className="pointer-events-none absolute inset-0 flex items-center justify-center overflow-hidden  md:px-4 lg:px-6 border border-red-800">
+      <div className="pointer-events-none absolute inset-0 flex items-center justify-center overflow-hidden  md:px-4 lg:px-6 ">
         <div
           ref={marqueeRef}
           className="flex flex-col items-center justify-around gap-8 text-center text-white/70"
@@ -302,8 +302,8 @@ export default function Home() {
         </div>
       </div>
 
-      <main className="relative z-10 flex min-h-screen items-center justify-center px-2 py-10    ">
-        <section className="w-full md:max-w-[80%] rounded-4xl border-8 border-black bg-white">
+      <main className="relative z-10 flex min-h-screen items-center justify-center  md:px-2 md:py-10    ">
+        <section className="w-full md:max-w-[80%] md:rounded-4xl md:border-8 md:border-black bg-white">
           <div ref={heroSectionRef}>
             <HeroView phoneRef={heroPhoneRef} />
           </div>

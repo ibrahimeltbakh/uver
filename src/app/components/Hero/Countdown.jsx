@@ -16,7 +16,6 @@ export default function Countdown() {
 
     const timeline = gsap.timeline({ delay: 0.3 });
 
-    // Animate the "Launching starts in" text
     if (textRef.current) {
       timeline.fromTo(
         textRef.current,
@@ -30,7 +29,6 @@ export default function Countdown() {
       );
     }
 
-    // Animate countdown digits
     timeline.fromTo(
       digitEls,
       { yPercent: 60, opacity: 0 },
@@ -41,7 +39,7 @@ export default function Countdown() {
         ease: "expo.out",
         stagger: 0.12,
       },
-      "-=0.2" // Start slightly before the text animation ends
+      "-=0.2"
     );
 
     return () => timeline.kill();
@@ -57,11 +55,11 @@ export default function Countdown() {
     <section
       ref={countdownRef}
       className="flex flex-col gap-3 sm:gap-4 md:gap-5 transition-all duration-300">
-      <p className="text-gray-500 text-xs sm:text-sm md:text-base lg:text-md flex items-center justify-center md:justify-start gap-1.5 sm:gap-2 transition-all duration-300">
+      <p className="text-gray-500 text-xs sm:text-sm md:text-base lg:text-md flex items-center justify-center lg:justify-start gap-1.5 sm:gap-2 transition-all duration-300">
         <Hourglass className="text-gray-600" size={16} strokeWidth={1.5} />
         <span ref={textRef}>Launching starts in</span>
       </p>
-      <div className="text-gray-600 flex items-center justify-center md:justify-start gap-1.5 sm:gap-2 md:gap-3 lg:gap-4 transition-all duration-300">
+      <div className="text-gray-600 flex items-center justify-center lg:justify-start gap-1.5 sm:gap-2 md:gap-3 lg:gap-4 transition-all duration-300">
         {countdownBlocks.map((block, index) => (
           <div
             key={block.label}
